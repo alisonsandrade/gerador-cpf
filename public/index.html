@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gerador de CPF</title>
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Gerador de CPF válido:</h1>
+    <div class="cpf"></div>
+
+    <button type="button" onClick="window.location.reload()" class="btnCPF">GERAR NOVO CPF</button>
+    <small class="date"></small>
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+  <script>
+    const date = document.querySelector('.date')
+    date.innerHTML = `Gerado em: ${new Date().toLocaleString()}h`
+  </script>
+</body>
+
+</html>
